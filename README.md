@@ -1,74 +1,87 @@
-# Comandos de Batch
+# Comandos de rede 
 ![comandos batch](https://arquivo.devmedia.com.br/artigos/BrunoAugusto/bat/BAT4.jpg)
 
-- echo: Exibe uma mensagem no console.
-  ```batch
-  echo Hello, World!
-@echo off: Desativa a exibição dos comandos no console.
+Comandos Batch são usados em scripts .bat ou .cmd para automatizar tarefas no Windows, como manipulação de arquivos, criação de pastas e execução de comandos.
 
-## batch
+Comandos comuns: echo: Exibe mensagens.
+@echo off: Desativa a exibição de comandos.
+
 ```
-@echo off
-pause: Pausa a execução do script até pressionar uma tecla.
+## pause: Pausa a execução.
 ```
-## batch
+
 ```
+ ## mkdir: Cria diretórios.
+```
+```
+## del: Exclui arquivos.
+```
+```
+## copy: Copia arquivos.
+```
+
+##Exemplo:
+
+```
+## @echo off
+```
+
+## mkdir C:\Backup
+```
+
+copy C:\Documentos\* C:\Backup\
+
+
+
 pause
-cls: Limpa a tela do console.
-```
-## batch
-```
-cls
-rem: Adiciona um comentário no script.
 ```
 
-## batch
+## @echo off
 ```
-rem Este é um comentário
-set: Define uma variável.
-```
-
-## batch
-```
-goto etiqueta: etiqueta
-echo Você foi redirecionado!
-call: Chama outro script batch.
+Desativa a exibição dos comandos no prompt enquanto o script está sendo executado. Isso deixa a execução mais limpa e legível.
 ```
 
-## batch 
+## mkdir trabalho
 ```
-call outro_script.bat
-exit: Encerra a execução do script.
-```
-
-## batch 
-```
-exit del: Exclui um arquivo.
+Cria um novo diretório chamado "trabalho" no diretório atual.
 ```
 
-## batch
+## cd trabalho
+```
+Muda o diretório de trabalho atual para o diretório "trabalho".
 ```
 
-del arquivo.txt
-copy: Copia arquivos.
+## pause
+```
+Pausa a execução do script, aguardando que o usuário pressione qualquer tecla para continuar.
 ```
 
-## batch
+## echo cr7 > messi.txt
+```
+Cria um arquivo de texto chamado "messi.txt" no diretório atual e escreve "cr7" dentro dele.
 ```
 
-copy arquivo1.txt arquivo2.txt
-mkdir: Cria um diretório.
+## pause
+```
+Pausa a execução novamente até que o usuário pressione uma tecla.
 ```
 
-## batch
-Copiar mkdir novo_diretorio
-rmdir: Remove um diretório.
+## cd ..
+```
+Volta para o diretório anterior, ou seja, sai do diretório "trabalho" e retorna ao diretório onde o script foi executado.
+```
 
-## batch
+## mkdir thierry
 ```
-rmdir diretorio_vazio
-css Copiar
+Cria um novo diretório chamado "thierry" no diretório atual.
 ```
+
+## pause
+```
+Pausa a execução mais uma vez.
+```
+
+move trabalho\messi.txt thierry\messi.txt
 
 
 
