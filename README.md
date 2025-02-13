@@ -1,4 +1,5 @@
 # Comandos de Batch
+![comandos batch](https://arquivo.devmedia.com.br/artigos/BrunoAugusto/bat/BAT4.jpg)
 
 - echo: Exibe uma mensagem no console.
   ```batch
